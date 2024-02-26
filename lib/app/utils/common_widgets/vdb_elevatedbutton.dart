@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-class FDCElevatedButton extends GetView {
-  const FDCElevatedButton({
+class VDBElevatedButton extends GetView {
+  const VDBElevatedButton({
     super.key,
     this.isAlternative = false,
     required this.onPressed,

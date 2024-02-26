@@ -6,9 +6,9 @@ import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 import "package:pointycastle/export.dart";
 
-enum SPCSnackBarType { success, error, warning, info }
+enum VDBSnackBarType { success, error, warning, info }
 
-class THelperFunctions {
+class VDBHelperFunctions {
   static Color? getColor(String value) {
     /// Define your product specific colors here and it will match the attribute colors and show specific 🟠🟡🟢🔵🟣🟤
 
@@ -46,27 +46,27 @@ class THelperFunctions {
   }
 
   static Future<void> showSnackbar(String title, String message,
-      {required SPCSnackBarType spcSnackBarType,
+      {required VDBSnackBarType vdbSnackBarType,
       SnackPosition position = SnackPosition.BOTTOM}) async {
     Get.isSnackbarOpen ? await Get.closeCurrentSnackbar() : null;
     Get.snackbar(
       title,
       message,
       snackPosition: position,
-      backgroundColor: spcSnackBarType == SPCSnackBarType.success
+      backgroundColor: vdbSnackBarType == VDBSnackBarType.success
           ? Colors.green
-          : spcSnackBarType == SPCSnackBarType.error
+          : vdbSnackBarType == VDBSnackBarType.error
               ? Colors.red
-              : spcSnackBarType == SPCSnackBarType.warning
+              : vdbSnackBarType == VDBSnackBarType.warning
                   ? Colors.orange
                   : Colors.blue,
       colorText: Colors.white,
       icon: Icon(
-        spcSnackBarType == SPCSnackBarType.success
+        vdbSnackBarType == VDBSnackBarType.success
             ? Icons.check_circle_outline
-            : spcSnackBarType == SPCSnackBarType.error
+            : vdbSnackBarType == VDBSnackBarType.error
                 ? Icons.error_outline
-                : spcSnackBarType == SPCSnackBarType.warning
+                : vdbSnackBarType == VDBSnackBarType.warning
                     ? Icons.warning_amber_outlined
                     : Icons.info_outline,
         color: Colors.white,

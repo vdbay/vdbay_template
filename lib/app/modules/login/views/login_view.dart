@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import '../../../utils/extensions/widget_extension.dart';
-import '../../../utils/common_widgets/fdc_textformfield.dart';
+import '../../../utils/common_widgets/vdb_textformfield.dart';
 import '../controllers/login_controller.dart';
 
 class LoginView extends GetView<LoginController> {
@@ -35,7 +35,7 @@ class LoginView extends GetView<LoginController> {
           Form(
             child: Column(
               children: [
-                FDCTextFormField(
+                VDBTextFormField(
                   labelText: 'Email',
                   hintText: 'Enter your email',
                   prefixIcon: const Icon(Icons.email_rounded),
@@ -50,7 +50,7 @@ class LoginView extends GetView<LoginController> {
                   keyboardType: TextInputType.emailAddress,
                   textController: controller.emailController,
                 ).withPaddingOnly(bottom: 16).withHero(tag: 'field1'),
-                FDCTextFormField(
+                VDBTextFormField(
                   isPassword: true,
                   labelText: 'Password',
                   hintText: 'Enter your password',

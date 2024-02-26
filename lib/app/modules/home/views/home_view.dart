@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../utils/common_widgets/fdc_elevatedbutton.dart';
+import '../../../utils/common_widgets/vdb_elevatedbutton.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
@@ -22,7 +22,7 @@ class HomeView extends GetView<HomeController> {
         children: [
           const Center(child: Text('Hello User')),
           Center(
-            child: FDCElevatedButton(
+            child: VDBElevatedButton(
               widthModifier: 0.5,
               onPressed: () => controller.logout(),
               text: 'Logout',

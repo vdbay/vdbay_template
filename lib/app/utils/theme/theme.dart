@@ -10,40 +10,40 @@ import 'widget_themes/elevated_button_theme.dart';
 import 'widget_themes/outlined_button_theme.dart';
 import 'widget_themes/text_field_theme.dart';
 
-class TAppTheme {
-  TAppTheme._();
+class VDBAppTheme {
+  VDBAppTheme._();
 
   static ThemeData lightTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    disabledColor: TColors.grey,
+    disabledColor: VDBColors.grey,
     brightness: Brightness.light,
-    primaryColor: TColors.primary,
-    textTheme: TTextTheme.lightTextTheme,
-    chipTheme: TChipTheme.lightChipTheme,
-    scaffoldBackgroundColor: TColors.white,
-    appBarTheme: TAppBarTheme.lightAppBarTheme,
-    checkboxTheme: TCheckboxTheme.lightCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.lightBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.lightElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.lightInputDecorationTheme,
+    primaryColor: VDBColors.primary,
+    textTheme: VDBTextTheme.lightTextTheme,
+    chipTheme: VDBChipTheme.lightChipTheme,
+    scaffoldBackgroundColor: VDBColors.white,
+    appBarTheme: VDBAppBarTheme.lightAppBarTheme,
+    checkboxTheme: VDBCheckboxTheme.lightCheckboxTheme,
+    bottomSheetTheme: VDBBottomSheetTheme.lightBottomSheetTheme,
+    elevatedButtonTheme: VDBElevatedButtonTheme.lightElevatedButtonTheme,
+    outlinedButtonTheme: VDBOutlinedButtonTheme.lightOutlinedButtonTheme,
+    inputDecorationTheme: VDBTextFormFieldTheme.lightInputDecorationTheme,
   );
 
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: 'Poppins',
-    disabledColor: TColors.grey,
+    disabledColor: VDBColors.grey,
     brightness: Brightness.dark,
-    primaryColor: TColors.primary,
-    textTheme: TTextTheme.darkTextTheme,
-    chipTheme: TChipTheme.darkChipTheme,
-    scaffoldBackgroundColor: TColors.black,
-    appBarTheme: TAppBarTheme.darkAppBarTheme,
-    checkboxTheme: TCheckboxTheme.darkCheckboxTheme,
-    bottomSheetTheme: TBottomSheetTheme.darkBottomSheetTheme,
-    elevatedButtonTheme: TElevatedButtonTheme.darkElevatedButtonTheme,
-    outlinedButtonTheme: TOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: TTextFormFieldTheme.darkInputDecorationTheme,
+    primaryColor: VDBColors.primary,
+    textTheme: VDBTextTheme.darkTextTheme,
+    chipTheme: VDBChipTheme.darkChipTheme,
+    scaffoldBackgroundColor: VDBColors.black,
+    appBarTheme: VDBAppBarTheme.darkAppBarTheme,
+    checkboxTheme: VDBCheckboxTheme.darkCheckboxTheme,
+    bottomSheetTheme: VDBBottomSheetTheme.darkBottomSheetTheme,
+    elevatedButtonTheme: VDBElevatedButtonTheme.darkElevatedButtonTheme,
+    outlinedButtonTheme: VDBOutlinedButtonTheme.darkOutlinedButtonTheme,
+    inputDecorationTheme: VDBTextFormFieldTheme.darkInputDecorationTheme,
   );
 }
