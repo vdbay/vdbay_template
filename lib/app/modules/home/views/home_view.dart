@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../../models/hierarcy.dart';
 import '../../../utils/common_widgets/fdc_elevatedbutton.dart';
 import '../controllers/home_controller.dart';
 
@@ -21,6 +20,7 @@ class HomeView extends GetView<HomeController> {
           controller.pageIndex.value = index;
         },
         children: [
+          const Center(child: Text('Hello User')),
           Center(
             child: FDCElevatedButton(
               widthModifier: 0.5,
