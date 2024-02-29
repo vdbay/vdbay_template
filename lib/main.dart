@@ -19,17 +19,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-        title: "Application",
-        // initialRoute: AppPages.INITIAL,
-        getPages: AppPages.routes,
-        debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.light,
-        darkTheme: ThemeData.dark(),
-        theme: ThemeData.light(),
-        home: const Scaffold(
-          body: Center(
-            child: CircularProgressIndicator(),
-          ),
-        ));
+      title: "Application",
+      // initialRoute: AppPages.INITIAL,
+      getPages: AppPages.routes,
+      debugShowCheckedModeBanner: false,
+      themeMode: ThemeMode.light,
+      darkTheme: ThemeData.dark(),
+      theme: ThemeData.light(),
+      home: const Scaffold(
+        body: Center(
+          child: CircularProgressIndicator(),
+        ),
+      ),
+    );
   }
 }
