@@ -17,13 +17,13 @@ class LandingView extends GetView<LandingController> {
         children: [
           Expanded(
             child: Icon(
-              Icons.business_rounded,
-              size: Get.width * 0.5,
+              Icons.person_rounded,
+              size: Get.width > Get.height ? Get.height * 0.3 : Get.width * 0.3,
               color: Get.theme.colorScheme.primary,
             ).withHero(tag: 'icon'),
           ),
           Text(
-            "Scada Prima Cipta",
+            "VDBay",
             style: Get.theme.textTheme.displayMedium,
             textAlign: TextAlign.center,
           ).withHero(tag: 'title'),
@@ -34,8 +34,8 @@ class LandingView extends GetView<LandingController> {
           ).withPaddingOnly(bottom: 32).withHero(tag: 'subtitle'),
           ElevatedButton(
             onPressed: () => Get.toNamed(Routes.LOGIN),
-            child: const Text("Login"),
-          ).withSizedBox(width: Get.width).withHero(tag: 'login'),
+            child: const Text("Continue"),
+          ).withSizedBox(width: Get.width).withHero(tag: 'button1'),
         ],
       ).withPaddingOnly(bottom: 32).withMarginAll().withSafeArea(),
     );

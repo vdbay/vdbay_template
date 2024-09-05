@@ -91,11 +91,11 @@ class RegisterView extends GetView<RegisterController> {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    controller.authController.login(token: 'this is a token');
+                    // controller.authController.login(token: 'this is a token');
                     controller.authController.verifyEmail();
                   },
                   child: const Text("Register"),
-                ).withSizedBox(width: Get.width).withHero(tag: 'register'),
+                ).withSizedBox(width: Get.width).withHero(tag: 'button1'),
               ],
             ),
           ),

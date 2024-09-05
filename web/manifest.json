@@ -1,11 +1,11 @@
 {
-    "name": "VDBay Template",
-    "short_name": "VDBay Template",
+    "name": "vdbay_template",
+    "short_name": "vdbay_template",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A Template for VDBay",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import '../../../routes/app_pages.dart';
 import '../../../utils/extensions/widget_extension.dart';
 import '../../../utils/common_widgets/vdb_textformfield.dart';
 import '../controllers/login_controller.dart';
@@ -18,7 +19,7 @@ class LoginView extends GetView<LoginController> {
           Expanded(
             child: Icon(
               Icons.login_rounded,
-              size: Get.width * 0.5,
+              size: Get.width > Get.height ? Get.height * 0.3 : Get.width * 0.3,
               color: Get.theme.colorScheme.primary,
             ).withHero(tag: 'icon'),
           ),
@@ -66,12 +67,21 @@ class LoginView extends GetView<LoginController> {
                   keyboardType: TextInputType.visiblePassword,
                   textController: controller.passwordController,
                 ).withPaddingOnly(bottom: 16).withHero(tag: 'field2'),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    TextButton(
+                      onPressed: () => Get.offNamed(Routes.REGISTER),
+                      child: const Text("Already have an account?"),
+                    ).withHero(tag: 'account'),
+                  ],
+                ),
                 ElevatedButton(
                   onPressed: () async {
                     await controller.login();
                   },
                   child: const Text("Login"),
-                ).withSizedBox(width: Get.width).withHero(tag: 'login'),
+                ).withSizedBox(width: Get.width).withHero(tag: 'button1'),
               ],
             ),
           ),
